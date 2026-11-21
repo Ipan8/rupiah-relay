@@ -2,13 +2,12 @@
 
 ## Registrasi (langkah Ivan — belum dilakukan)
 
-- [ ] Buat repo GitHub publik `rupiah-relay` (github.com/new → Public, tanpa README)
-- [ ] Push scaffold ini ke repo (Suneo, setelah repo ada — via push_files, 1 approval)
-- [ ] Daftar di https://www.loops.house/agents-open-for-business
+- [x] Buat repo GitHub publik `rupiah-relay` (dibuat Suneo via browser 21 Nov 21:25, https://github.com/Ipan8/rupiah-relay)
+- [x] Push scaffold ini ke repo (21 Nov 21:35, commit 986c1bb1, 20 file, via push_files bulk)
+- [x] Daftar di https://www.loops.house/agents-open-for-business
       (nama proyek, repo publik, handle Telegram) → catat **attribution tag** di sini:
-      Tag: `______________________`
-      (Fallback terpasang di agent: derived dari slug `Ipan8/rupiah-relay` =
-      `celo_2b6aa9d3acff` — WAJIB dikonfirmasi vs tag Loops sebelum mainnet.)
+      Tag: `celo_e8a3571fc9bd` ✅ (diterima 21 Nov 21:40 WIB, enrolment Step 1 selesai; sign-in via GitHub Ipan8 — Ivan pilih sendiri)
+      (Tag sudah dipasang di kode agent 21 Nov 21:44 — `.env.example` + README + DESIGN diperbarui; push ke repo menyusul.)
 - [ ] Follow @Celo + @CeloDevs di X (HP Ivan)
 - [ ] Tentukan penerima IDRX pertama (di luar tim): nama + alamat Celo
       Nama: `______________________`  Alamat: `______________________`
@@ -20,7 +19,7 @@
 ## Build (Suneo)
 
 - [x] Pasang attribution tag di kode agent (21 Nov — via `@celo/attribution-tags`
-      `withAttribution`; fallback derived `celo_2b6aa9d3acff`, konfirmasi vs Loops sebelum mainnet)
+      `withAttribution`; tag Loops resmi `celo_e8a3571fc9bd` dari `ATTRIBUTION_TAG`, fallback `codeFromRepo` hanya kalau env kosong)
 - [ ] Registrasi ERC-8004 agent (setelah wallet didanai) → catat ID + link 8004scan
       ERC-8004 ID: `______________________`
       Prep SELESAI 21 Nov: signatures exact dari repo publik erc-8004 (ABI di `research/`),

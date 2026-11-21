@@ -31,7 +31,7 @@ dan membayar freelancer Indonesia — dengan fee 0,5% yang membiayai gas agent i
 | Agent viem v1 (`agent/src/index.js`) | ✅ `npm install` + `node --check` OK. Poll Deposit → preview → firm RFQ → swapAndPay → status.json. |
 | Textile RFQ live | ✅ Preview live 21 Nov: **10 USDT → 18.378.002 atomic IDRX (183.780 IDR)**, fee ~2 bps, depth ~54.636 USDT. Agent preview-only run mengulang angka yang sama persis. |
 | ERC-8004 prep | ✅ Signatures exact dari repo publik `erc-8004/erc-8004-contracts` @ `b9e466c2` (ABI lengkap di `research/`). `agent-registration.json` + draft `agent/src/register-8004.js` siap — registrasi sendiri HANYA setelah wallet didanai. |
-| Attribution tag | ⚠️ Belum dari Loops (repo belum dibuat). Fallback terpasang: derived dari slug repo `Ipan8/rupiah-relay` = **`celo_2b6aa9d3acff`** (codeFromRepo, derivasi sama seperti platform Celo Builders) — WAJIB dikonfirmasi vs registrasi Loops sebelum mainnet. |
+| Attribution tag | ✅ Tag Loops resmi: **`celo_e8a3571fc9bd`** (enrolment 21 Nov 2026, akun GitHub Ipan8). Agent pakai tag ini via `ATTRIBUTION_TAG` di `.env` (lihat `.env.example`); fallback `codeFromRepo` hanya kalau env kosong. |
 | Deploy / funding / registrasi | ⏳ Menunggu Ivan: repo GitHub, registrasi Loops, dana 5 CELO + 25 USD₮, nama + wallet penerima. |
 
 ## Desain singkat
@@ -129,7 +129,7 @@ Tiap konversi harus meninggalkan jejak ini (agent menuliskannya ke `agent/status
 1. **Deliverable beneran** — foto kaos tie-dye (proses + produk jadi) dari penerima,
    disimpan di `proof/` + ditautkan di README submission. Ini bukti "real job for a real person".
 2. **Tx hash on-chain** — deposit USD₮ → `swapAndPay` (ber-tag) → payout IDRX → `withdrawFees`.
-   Semua tx agent ber-tag ERC-8021 (`celo_2b6aa9d3acff` / kode Loops setelah dikonfirmasi).
+   Semua tx agent ber-tag ERC-8021 (`celo_e8a3571fc9bd`, tag Loops resmi).
 3. **Konfirmasi penerima** — pesan/teks dari freelancer yang membenarkan: menerima IDRX
    sejumlah X untuk order kaos Y (jumlah + desain). Hubungan keluarga diungkap transparan
    di README (aturan hanya melarang anggota tim + wallet yang didanai tim).

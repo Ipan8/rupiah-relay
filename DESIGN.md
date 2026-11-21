@@ -54,9 +54,10 @@ Tag: kode ERC-8021 dari registrasi Loops (`celo_...`), ditempel di akhir calldat
 tiap tx yang dibangun agent (bukan di kontrak) via `@celo/attribution-tags`
 (`withAttribution`). Panduan: github.com/celo-org/attribution-tags.
 Tag TIDAK bisa ditambah belakangan — pasang sebelum tx pertama.
-Fallback: kalau tag Loops belum ada, agent menurunkan kode dari slug repo
-(`codeFromRepo("Ipan8/rupiah-relay")` = `celo_2b6aa9d3acff`) — konfirmasi vs Loops
-sebelum mainnet. Textile juga bisa menempelkan tag sendiri kalau RFQ diminta dengan
+Tag Loops resmi: `celo_e8a3571fc9bd` (enrolment 21 Nov 2026, akun GitHub Ipan8) —
+agent membacanya dari env `ATTRIBUTION_TAG`. Fallback kalau env kosong: kode
+diturunkan dari slug repo (`codeFromRepo("Ipan8/rupiah-relay")`). Textile juga
+bisa menempelkan tag sendiri kalau RFQ diminta dengan
 `includeAttribution: true` + `builderCodes: [tag]` (best-effort; non-partner bisa
 tetap tidak ter-tag di sisi Textile — tag agent di tx luar yang dijamin).
 
