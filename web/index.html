@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rupiah Relay — Status</title>
+<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:2rem auto;padding:0 1rem}code{background:#f0f0f0;padding:2px 4px;border-radius:4px}</style>
+</head>
+<body>
+<h1>Rupiah Relay</h1>
+<p>Agent pembayaran freelancer: USD₮ → IDRX di Celo mainnet (Agents Open for Business).</p>
+<h2>Kontrak &amp; identitas</h2>
+<ul>
+  <li>Relay: <code id="relay">belum deploy</code></li>
+  <li>Agent wallet: <code>0xa9cB01C54930511202fd75734bcdDe8FbE9B2453</code></li>
+  <li>ERC-8004: <code id="e8004">belum registrasi</code></li>
+</ul>
+<h2>Transaksi terakhir</h2>
+<p id="txs">Belum ada transaksi — status.json ditulis agent saat konversi pertama jalan.</p>
+<p><a href="https://celoscan.io/address/0xa9cB01C54930511202fd75734bcdDe8FbE9B2453">Lihat wallet agent di Celoscan</a></p>
+<script>
+// TODO (2-3 Des): fetch status.json (ditulis agent/src/index.js) dan render tx terakhir.
+fetch("status.json").then(r => r.json()).then(s => {
+  document.getElementById("relay").textContent = s.relay || "belum deploy";
+  document.getElementById("e8004").textContent = s.erc8004 || "belum registrasi";
+  document.getElementById("txs").textContent = (s.txs || []).map(t => t.hash).join("\n") || "Belum ada transaksi.";
+}).catch(() => {});
+</script>
+</body>
+</html>

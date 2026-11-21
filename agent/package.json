@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "viem": "^2.0.0",
+    "@celo/attribution-tags": "^0.5.0"
+  },
+  "description": "Agent: USD\u20ae -> IDRX payout via Textile FX on Celo mainnet (Agents Open for Business hackathon)",
+  "name": "rupiah-relay-agent",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}

@@ -1,0 +1,7 @@
+contracts/lib/
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+agent/node_modules/
+agent/.env
+*.log
