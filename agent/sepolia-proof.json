@@ -1,0 +1,52 @@
+{
+  "network": "celo-sepolia",
+  "chainId": 11142220,
+  "tag": "celo_e8a3571fc9bd",
+  "steps": [
+    {
+      "label": "approve relay USDT",
+      "tx": "0xc040810979aa7c58575be12126f9dbfdf9d04e457b236851d723180e145376ff",
+      "explorer": "https://celo-sepolia.blockscout.com/tx/0xc040810979aa7c58575be12126f9dbfdf9d04e457b236851d723180e145376ff"
+    },
+    {
+      "label": "deposit 10 mock USDT",
+      "tx": "0xaf1a250e54da99721cf932997a19dbee5adefc8ad30cc01d214100ba5c5c6911",
+      "explorer": "https://celo-sepolia.blockscout.com/tx/0xaf1a250e54da99721cf932997a19dbee5adefc8ad30cc01d214100ba5c5c6911"
+    },
+    {
+      "label": "approveReactor",
+      "tx": "0x5f69e012780a8d935d22e2e2281a3c4e0a56f832fcb4c316a10248fb2f60e838",
+      "explorer": "https://celo-sepolia.blockscout.com/tx/0x5f69e012780a8d935d22e2e2281a3c4e0a56f832fcb4c316a10248fb2f60e838"
+    },
+    {
+      "label": "swapAndPay payout 3",
+      "tx": "0x19349ae0a7a300e487685824afbf5857ddc1218cc04e81dcc7d8a225c1711fab",
+      "explorer": "https://celo-sepolia.blockscout.com/tx/0x19349ae0a7a300e487685824afbf5857ddc1218cc04e81dcc7d8a225c1711fab"
+    },
+    {
+      "label": "withdrawFees",
+      "tx": "0x78ec3fd7495d4e3561938fb06ba059e1bed747d98fbf64a672b3836cec1a8b82",
+      "explorer": "https://celo-sepolia.blockscout.com/tx/0x78ec3fd7495d4e3561938fb06ba059e1bed747d98fbf64a672b3836cec1a8b82"
+    }
+  ],
+  "checks": {
+    "attribution_deposit": true,
+    "attribution_approveReactor": true,
+    "attribution_swapAndPay": true,
+    "recipientReceived": true,
+    "feesAccrued": true,
+    "payoutDone": true,
+    "attribution_withdrawFees": true,
+    "feeWithdrawn": true,
+    "eip1271_valid": true,
+    "eip1271_wrongSigner": true
+  },
+  "agentBalanceWei": "703826452495231150",
+  "relay": "0x7eF98a8914B6b9771B3746065a94c54F29D46610",
+  "usdt": "0x80B416d32fD4A70161eeE887ac9bDAD43D93849b",
+  "idrx": "0x0a8401Acdf5c13c5255763D38472Fb9F9303E2d8",
+  "reactor": "0x314413299c2835fA91e5AC183cc10F0e8aDaA74b",
+  "demoRecipient": "0xb1B4339C1e9a01Ea477e35dA9cB50BB5ae970618",
+  "allChecksPass": true,
+  "finishedAt": "2026-11-24T04:03:51.971Z"
+}

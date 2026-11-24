@@ -1,0 +1,14 @@
+{
+  "network": "celo-sepolia",
+  "chainId": 11142220,
+  "relay": "0x7eF98a8914B6b9771B3746065a94c54F29D46610",
+  "payout0": {
+    "recipient": "0xb1B4339C1e9a01Ea477e35dA9cB50BB5ae970618",
+    "usdtIn": "10000000",
+    "idrxOut": "18378002",
+    "fee": "91890",
+    "toRecipient": "18286112"
+  },
+  "allChecksPass": true,
+  "at": "2026-11-24T04:03:51.971Z"
+}
