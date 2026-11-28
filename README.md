@@ -6,6 +6,13 @@ Stretch: Altana Agent Wallets (satu proyek boleh menang di max 2 track).
 **Satu kalimat:** agent yang menerima USD₮ dari klien, menukarnya ke IDRX di Textile FX,
 dan membayar freelancer Indonesia — dengan fee 0,5% yang membiayai gas agent itu sendiri.
 
+## Live demo
+
+**Demo (halaman status): https://rupiah-relay-ipan12.vercel.app** — alamat relay Celo Sepolia
+(`0x7eF98a8914B6b9771B3746065a94c54F29D46610`) + 5 tx bukti konversi 24 Nov 2026:
+deposit 10 mock USDT → penerima 18.286.112 atomic IDRX, fee 91.890 (0,5%), EIP-1271 valid.
+Bukti lengkap: [`agent/sepolia-proof.json`](agent/sepolia-proof.json) (+ [`agent/status-sepolia.json`](agent/status-sepolia.json)).
+
 ## Kenapa konsep ini
 
 - **Job beneran, buat orang beneran.** Brief hackathon: "ship an agent that does a real job
